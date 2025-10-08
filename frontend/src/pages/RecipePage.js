@@ -6,7 +6,7 @@ function RecipePage() {
   const [recipe, setRecipe] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/recipes")
+    fetch("https://food-bolg-backenda.onrender.com")
       .then((res) => res.json())
       .then((data) => {
         const selected = data.find((r) => r.id === parseInt(id));
